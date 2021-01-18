@@ -180,6 +180,7 @@ export default {
       image.style.width = '100px';
       image.style.height = '100px';
       image.style.zIndex = -1;
+      image.style.position = 'absolute';
       image.setAttribute('alt', this.socialShare.title || defaultTitle);
 
       image.src = this.socialShare.image;
