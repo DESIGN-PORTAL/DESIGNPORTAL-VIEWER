@@ -7,6 +7,10 @@
 <script>
 export default {
   props: {
+    data: {
+      type: Object,
+      default: () => {},
+    },
     img: {
       type: String,
       default: '',
