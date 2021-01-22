@@ -355,6 +355,11 @@ export default {
 </script>
 
 <style lang="less">
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 .not-phone {
   padding: 40px;
   text-align: center;

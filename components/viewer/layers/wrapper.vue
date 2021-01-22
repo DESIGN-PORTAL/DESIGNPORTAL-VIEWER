@@ -53,16 +53,16 @@ export default {
   },
   computed: {
     renderWidth() {
-      return this.item.width * this.designView.scale;
+      return this.item.width * this.scale;
     },
     renderHeight() {
-      return this.item.height * this.designView.scale;
+      return this.item.height * this.scale;
     },
     renderLeft() {
-      return this.item.left * this.designView.scale;
+      return this.item.left * this.scale;
     },
     renderTop() {
-      return this.item.top * this.designView.scale;
+      return this.item.top * this.scale;
     },
     wrapperStyle() {
       const { item } = this;

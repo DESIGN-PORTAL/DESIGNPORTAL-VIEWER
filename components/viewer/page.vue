@@ -3,7 +3,7 @@
     <component :is="preName + 'Background'" v-if="page.bg.url" :bg="page.bg"></component>
 
     <template v-for="(layer, index) in page.layers">
-      <Layer :key="index" :item="layer" :index="index" />
+      <Layer :key="index" :item="layer" :index="index" :scale="scale" />
     </template>
   </div>
 </template>
@@ -24,6 +24,10 @@ export default {
     index: {
       type: Number,
       default: 0,
+    },
+    scale: {
+      type: Number,
+      default: 1,
     },
   },
   data() {
